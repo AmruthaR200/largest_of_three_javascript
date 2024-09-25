@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest of three</title>
+</head>
+<body>
+    <form onsubmit="la()">
+        <label>enter number 1 :</label>
+        <input type="number" id="number1"><br>
+        <label>enter number 2 :</label>
+        <input type="number" id="number2"><br>
+        <label>enter number 3 :</label>
+        <input type="number" id="number3"><br>
+        <input type="submit">
+    </form>
+    <script>
+        function la(){
+            var num1=document.getElementById("number1").value;
+            var num2=document.getElementById("number2").value;
+            var num3=document.getElementById("number3").value;
+            if(num1==num2 || num1==num3 || num2==num3){
+                alert("1 and 2 EQUAL"+ num2)
+            }
+            else{
+            if(num1>num2 && num1>num3)
+            {
+                alert("number in box1 is largest "+ num1);
+            }
+            else if(num2>num3)
+            {
+                alert("number in box2 is largest "+ num2);
+            }
+            else{
+                alert("number in box3 is largest "+ num3);
+            }
+        }
+            
+        }
+    </script>
+</body>
+</html>
